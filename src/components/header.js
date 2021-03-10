@@ -1,35 +1,67 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
+const Header = ({ siteTitle }) => { 
+
+  const changeBackground = () => {
+    const header = document.querySelector(".header");
+    if(window.scrollY > 0) {
+      header.classList.add('active');
+    }
+    else {
+      header.classList.remove('active');
+    }
+  }
+  window.addEventListener('scroll', changeBackground);
+
+
+
+  class Menu extends React.Component {
+    toggle = () => {
+      
+      const navLinks = document.querySelector(".nav-links");
+      const links = document.querySelectorAll(".nav-links li");      
+      navLinks.classList.toggle("open");
+      
+      navLinks.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+      })
+
+      links.forEach(link => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("open");
+        })
+      });
+    }
+
+    render() {
+      return (
+        <div className="hamburger" onClick={this.toggle} role="button">
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+        </div>
+      );
+    }
+  } 
+
+
+
+  return(    
+    <header className="header">
+      <h1 className="title">
+            {siteTitle}
       </h1>
-    </div>
-  </header>
-)
+      <Menu />
+      <ul className="nav-links">
+        <li className="link">Usługi</li>
+        <li className="link">O mnie</li>
+        <li className="link">Projekty</li>
+        <li className="link">Kontakt</li>
+      </ul>
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

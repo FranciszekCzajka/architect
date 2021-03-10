@@ -1,0 +1,107 @@
+.landing {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing .left {
+  width: 50%;
+  height: 60%;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.landing .left .main-text {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.landing .left .sub-text {
+  font-size: 20px;
+}
+
+.landing .left .CTA {
+  position: relative;
+  display: inline-block;
+  width: 321px;
+  border: 2px solid #212121;
+  padding: 16px 0px;
+  color: #212121;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.landing .left .CTA .CTA-text {
+  position: relative;
+  padding: 16px 32px;
+  background-color: #F3FAE1;
+  z-index: 1;
+  font-weight: bold;
+}
+
+.landing .left .CTA:before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 12px);
+  background: #fff;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.landing .left .CTA:hover:before {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+.landing .left .CTA:after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% - 12px);
+  background: #fff;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.landing .left .CTA:hover:after {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.landing .right {
+  width: 50%;
+  height: 60%;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*# sourceMappingURL=index.css.map */
