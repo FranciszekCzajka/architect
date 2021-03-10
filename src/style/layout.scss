@@ -6,6 +6,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .header {
@@ -15,7 +16,7 @@
     background: transparent;
     transition: .4s all ease-in-out;
     display: flex;
-    z-index: 2;
+    z-index: 5;
     .title {
         display: flex;
         width: 50%;
@@ -36,6 +37,10 @@
         margin-left: auto;
         letter-spacing: 2px;
         font-size: 22px;
+        .link {
+            text-decoration: none;
+            color: $dark;
+        }
     }
 }
 

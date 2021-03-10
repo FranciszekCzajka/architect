@@ -57,7 +57,7 @@ const Header = ({ siteTitle }) => {
         <li className="link">Usługi</li>
         <li className="link">O mnie</li>
         <li className="link">Projekty</li>
-        <li className="link">Kontakt</li>
+        <li><a className="link" href="#contact">Kontakt</a></li>
       </ul>
     </header>
   )

@@ -54,7 +54,7 @@
 .landing .left .CTA .CTA-text {
   position: relative;
   padding: 16px 32px;
-  background-color: #F3FAE1;
+  background-color: #fafafa;
   z-index: 1;
   font-weight: bold;
 }
@@ -103,5 +103,168 @@
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.contact {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #424242;
+}
+
+.contact .container {
+  position: relative;
+  min-width: 1100px;
+  min-height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+}
+
+.contact .container .contact-info {
+  position: absolute;
+  top: 40px;
+  width: 350px;
+  height: calc(100% - 80px);
+  background: #fafafa;
+  z-index: 1;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .container .contact-info .contact-text {
+  color: #212121;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.contact .container .contact-info .info {
+  position: relative;
+  margin: 20px 0;
+}
+
+.contact .container .contact-info .contact-details {
+  position: relative;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #212121;
+  margin: 20px 12px;
+  font-size: 18px;
+}
+
+.contact .container .contact-form {
+  position: absolute;
+  padding: 80px 50px;
+  background: #4a4a4a;
+  margin-left: 150px;
+  padding-left: 250px;
+  width: calc(100% - 250px);
+  height: 100%;
+}
+
+.contact .container .contact-form .send-message {
+  color: #fafafa;
+  letter-spacing: 2px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contact .container .contact-form .form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 42px;
+}
+
+.contact .container .contact-form .input {
+  position: relative;
+}
+
+.contact .container .contact-form .input span {
+  position: absolute;
+  left: 0;
+  padding: 5px;
+  font-size: 18px;
+  color: #fafafa;
+  -webkit-transition: .5s;
+  transition: .5s;
+  pointer-events: none;
+  letter-spacing: 1px;
+}
+
+.contact .container .contact-form .input textarea {
+  min-height: 120px;
+}
+
+.contact .container .contact-form .input input, .contact .container .contact-form .input textarea {
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 18px;
+  color: #fafafa;
+  border: none;
+  outline: none;
+  background: #525252;
+  resize: none;
+}
+
+.contact .container .contact-form .input input:focus ~ span, .contact .container .contact-form .input textarea:focus ~ span,
+.contact .container .contact-form .input input:valid ~ span, .contact .container .contact-form .input textarea:valid ~ span {
+  -webkit-transform: translateY(-32px);
+          transform: translateY(-32px);
+  font-size: 16px;
+}
+
+.contact .container .contact-form .input input[type="submit"] {
+  position: relative;
+  cursor: pointer;
+  background: #fafafa;
+  color: #212121;
+  border: none;
+  max-width: 150px;
+  padding: 14px;
+  -webkit-transition: .4s all ease-in-out;
+  transition: .4s all ease-in-out;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.contact .container .contact-form .input input[type="submit"]:hover {
+  color: #fafafa;
+  background: #212121;
+}
+
+.contact .container .contact-form .input.w50 {
+  width: 47%;
+  margin-bottom: 48px;
+}
+
+.contact .container .contact-form .input.w100 {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: right;
 }
 /*# sourceMappingURL=index.css.map */

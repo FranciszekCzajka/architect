@@ -5,6 +5,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -17,7 +18,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 2;
+  z-index: 5;
 }
 
 .header .title {
@@ -52,6 +53,11 @@
   margin-left: auto;
   letter-spacing: 2px;
   font-size: 22px;
+}
+
+.header .nav-links .link {
+  text-decoration: none;
+  color: #212121;
 }
 
 header.active {
