@@ -3,22 +3,6 @@ import PropTypes from "prop-types"
 
 const Header = ({ siteTitle }) => { 
 
-  const changeBackground = () => {
-    const header = document.querySelector(".header");
-    const top = document.querySelector(".to-the-top");
-    if(window.scrollY > 0) {
-      header.classList.add('active');
-      top.classList.add('active');
-    }
-    else {
-      header.classList.remove('active');
-      top.classList.remove('active');
-    }
-  }
-  Header.addEventListener('scroll', changeBackground);
-
-
-
   class Menu extends React.Component {
     toggle = () => {
 
@@ -49,7 +33,10 @@ const Header = ({ siteTitle }) => {
   return(    
     <header className="header">
       <h1 className="title">
-            {siteTitle}
+        <a className="top-link" href="#top">
+              {siteTitle}
+              
+        </a>
       </h1>
       <Menu />
       <ul className="nav-links">

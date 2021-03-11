@@ -21,9 +21,6 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
         <main>
           {children}
-          <a href="#top" className="to-the-top">
-            🡡
-          </a>
         </main>
         <footer id="contact" className="contact">
           <h2 className="contact-me">Skontaktuj sie!</h2>

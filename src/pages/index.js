@@ -3,15 +3,15 @@ import * as React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../style/index.css"
-import photo from "../images/photo.jpg"
-import project1 from "../images/project1.jpg"
-import project2 from "../images/project2.jpg"
-import project3 from "../images/project3.jpg"
-import project4 from "../images/project4.jpg"
-import project5 from "../images/project5.jpg"
-import service1 from "../images/service1.jpg"
-import service2 from "../images/service2.jpg"
-import service3 from "../images/service3.jpg"
+import photo from "../images/photo.webp"
+import project1 from "../images/project1.webp"
+import project2 from "../images/project2.webp"
+import project3 from "../images/project3.webp"
+import project4 from "../images/project4.webp"
+import project5 from "../images/project5.webp"
+import service1 from "../images/service1.webp"
+import service2 from "../images/service2.webp"
+import service3 from "../images/service3.webp"
 
 const IndexPage = () => {
 
@@ -21,7 +21,7 @@ const IndexPage = () => {
       <div id="top" className="landing">
         <div className="left">
           <h2 className="main-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
           </h2>
           <h3 className="sub-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque cum, odio voluptatum reprehenderit nemo animi maxime ipsa alias optio illum id laborum, ea repellat rem, perferendis iure doloremque modi eveniet!</h3>
           <a href="#services" className="CTA">
