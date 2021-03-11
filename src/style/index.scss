@@ -80,6 +80,7 @@
         margin-top: 92px;
     }
 }
+
 .services {
     width: 100%; 
     padding-top: 20vh;
@@ -93,7 +94,7 @@
         letter-spacing: 2px;
     }    
     .services-list {
-        width: 1200px;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -124,6 +125,7 @@
         }
     }
 }
+
 .projects {   
     width: 100%;   
     padding-top: 20vh; 
@@ -138,12 +140,12 @@
         letter-spacing: 2px;
     }
     .card-1 {
-        width: 900px;
         background-color: $light;
         display: flex;
         flex-direction: row-reverse;
-        margin-top: 128px;
+        width: 900px;
         height: 400px;
+        margin: 64px;
         .left {
             width: 50%;
             height: 100%;
@@ -172,11 +174,11 @@
         }
     }    
     .card-2 {
-        width: 900px;
         background-color: $light;
         display: flex;
-        margin-top: 128px;
+        width: 900px;
         height: 400px;
+        margin: 64px;
         .left {
             width: 50%;
             height: 100%;
@@ -204,6 +206,7 @@
         }
     }
 }
+
 .about {
     width: 100%;
     padding-top: 20vh;
@@ -322,7 +325,216 @@
         }
     }
 }
+
 .go-deeper.smaller-top-margin {
     margin-top: 6vh;
     margin-bottom: 12vh;
+}
+
+@media screen and (max-width: 1200px) {
+    .services {
+        .services-list {
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .landing {
+        .left {
+            width: 80%;
+            padding-left: 0;
+        }
+        .right {
+            display: none;
+        }
+    }
+    .projects {
+        .card-1  {
+            flex-direction: column;
+            height: 800px;
+            width: 400px;
+            .left {
+                width: 100%;
+            }
+            .right {
+                width: 100%;
+                padding: 32px;
+                padding-top: 64px;
+            }
+        }
+        .card-2  {
+            flex-direction: column;
+            height: 800px;
+            width: 400px;
+            .left {
+                width: 100%;
+            }
+            .right {
+                width: 100%;
+                padding: 32px;
+                padding-top: 64px;
+            }
+        }
+    }
+    .about {
+        .card {
+            width: 400px;
+            flex-direction: column;
+            .left {
+                width: 100%;
+            }
+            .right {
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 567px) {
+    .landing {
+        height: 90vh;
+        .left {
+            padding: 0;
+            padding-top: 12vh;
+            height: 100%;
+            .main-text {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .sub-text {
+                font-size: 18px;
+            }
+            .CTA {
+                position: relative;
+                display: inline-block;
+                width: 264px;
+                border: 2px solid $dark;
+                padding: 16px 0px;
+                color: $dark;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 18px;
+                background-color: $light;
+                .CTA-text {
+                    position: relative;
+                    padding: 16px;
+                    z-index: 1;
+                    font-weight: bold;
+                }
+            }
+            .CTA:before {
+                content: '';
+                position: absolute;
+                top: 6px;
+                left: -4px;
+                width: calc(100% + 8px);
+                height: calc(100% - 12px);
+                background-color: $light;
+                transition: .5s ease-in-out;
+                transform: scaleY(1);
+            }        
+            .CTA:hover:before {
+                transform: scaleY(0);
+            }
+            .CTA:after {
+                content: '';
+                position: absolute;
+                left: 6px;
+                top: -4px;
+                height: calc(100% + 8px);
+                width: calc(100% - 12px);
+                background-color: $light;
+                transition: .5s ease-in-out;
+                transform: scaleX(1);
+            }
+            .CTA:hover:after {
+                transform: scaleX(0);
+            }
+        }
+    }
+    .services {
+        padding-top: 16vh; 
+        .my-services {
+            font-size: 16px;
+        }    
+        .services-list {
+            .service {
+                width: 300px;
+                margin-top: 64px;
+                .up {
+                    width: 180px;
+                    height: 180px;
+                }
+                .down {
+                    font-size: 14px;
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+    .projects {
+        padding-top: 16vh; 
+        .projects-name {
+            font-size: 16px;
+        }
+        .card-1  {
+            height: 700px;
+            width: 300px;
+            margin: 32px;
+            .right {
+                width: 100%;
+                padding: 26px;
+                padding-top: 48px;
+                .project {
+                    font-size: 16px;
+                }                
+                .project-text {
+                    font-size: 14px;
+                }
+            }
+        }
+        .card-2  {
+            height: 700px;
+            width: 300px;
+            margin: 32px;
+            .right {
+                padding: 26px;
+                padding-top: 48px;
+                .project {
+                    font-size: 16px;
+                }                
+                .project-text {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .about {
+        padding-top: 16vh; 
+        .about-me {
+            font-size: 16px;
+        }
+        .card {
+            width: 260px;
+            flex-direction: column;
+            .left {
+                width: 100%;
+            }
+            .right {
+                width: 100%;
+                padding: 26px;
+                padding-top: 48px;
+                .i-am {
+                    font-size: 16px;
+                }
+                .i-am-text {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .go-deeper {
+        margin-top: 12vh;
+        font-size: 16px;
+    }
 }

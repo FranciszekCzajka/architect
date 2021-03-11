@@ -72,10 +72,12 @@ const IndexPage = () => {
         </a>
       </div>
       <div id="projects" className="projects">  
-        <h2 className="projects-name">Ostatnio wykonane projekty</h2>      
+        <h2 className="projects-name">
+          Ostatnio wykonane projekty
+        </h2>      
         <div className="card-1">
           <div className="left">
-            <img class="picture" src={project1} alt="Projekt 1"/>
+            <img className="picture" src={project1} alt="Projekt 1"/>
           </div>
           <div className="right">
             <h3 className="project">
@@ -88,7 +90,7 @@ const IndexPage = () => {
         </div>
         <div className="card-2">
           <div className="left">
-            <img class="picture" src={project2} alt="Projekt 2"/>
+            <img className="picture" src={project2} alt="Projekt 2"/>
           </div>
           <div className="right">
             <h3 className="project">
@@ -101,7 +103,7 @@ const IndexPage = () => {
         </div>
         <div className="card-1">
           <div className="left">
-            <img class="picture" src={project3} alt="Projekt 3"/>
+            <img className="picture" src={project3} alt="Projekt 3"/>
           </div>
           <div className="right">
             <h3 className="project">
@@ -114,7 +116,7 @@ const IndexPage = () => {
         </div>
         <div className="card-2">
           <div className="left">
-            <img class="picture" src={project4} alt="Projekt 4"/>
+            <img className="picture" src={project4} alt="Projekt 4"/>
           </div>
           <div className="right">
             <h3 className="project">
@@ -127,7 +129,7 @@ const IndexPage = () => {
         </div>
         <div className="card-1">
           <div className="left">
-            <img class="picture" src={project5} alt="Projekt 5"/>
+            <img className="picture" src={project5} alt="Projekt 5"/>
           </div>
           <div className="right">
             <h3 className="project">
@@ -147,10 +149,12 @@ const IndexPage = () => {
         </a>
       </div>
       <div id="about" className="about">
-        <h2 className="about-me">O mnie</h2>
+        <h2 className="about-me">
+          O mnie
+        </h2>
         <div className="card">
           <div className="left">
-            <img class="picture" src={photo} alt="To ja"/>
+            <img className="picture" src={photo} alt="To ja"/>
           </div>
           <div className="right">
             <h3 className="i-am">

@@ -21,15 +21,11 @@ const Header = ({ siteTitle }) => {
 
   class Menu extends React.Component {
     toggle = () => {
-      
+
       const navLinks = document.querySelector(".nav-links");
       const links = document.querySelectorAll(".nav-links li");      
       navLinks.classList.toggle("open");
       
-      navLinks.addEventListener("click", () => {
-        navLinks.classList.remove("open");
-      })
-
       links.forEach(link => {
         link.addEventListener("click", () => {
           navLinks.classList.remove("open");
@@ -57,10 +53,10 @@ const Header = ({ siteTitle }) => {
       </h1>
       <Menu />
       <ul className="nav-links">
-        <li><a className="link" href="#services">Usługi</a></li>
-        <li><a className="link" href="#projects">Projekty</a></li>
-        <li><a className="link" href="#about">O mnie</a></li>
-        <li><a className="link" href="#contact">Kontakt</a></li>
+        <li className="list-link"><a className="link" href="#services">Usługi</a></li>
+        <li className="list-link"><a className="link" href="#projects">Projekty</a></li>
+        <li className="list-link"><a className="link" href="#about">O mnie</a></li>
+        <li className="list-link"><a className="link" href="#contact">Kontakt</a></li>
       </ul>
     </header>
   )
