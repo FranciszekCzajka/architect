@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => {
       top.classList.remove('active');
     }
   }
-  document.addEventListener('scroll', changeBackground);
+  Header.addEventListener('scroll', changeBackground);
 
 
 
