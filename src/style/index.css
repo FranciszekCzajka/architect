@@ -107,8 +107,84 @@
   margin-top: 92px;
 }
 
+.services {
+  width: 100%;
+  padding-top: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.services .my-services {
+  padding: 0px 12px 8px 12px;
+  border-bottom: 2px solid #212121;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.services .services-list {
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .services-list .service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 330px;
+  margin-top: 92px;
+}
+
+.services .services-list .service .up {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.services .services-list .service .up .picture {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.services .services-list .service .up .zoom {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+}
+
+.services .services-list .service .down {
+  margin-top: 32px;
+  line-height: 1.6;
+}
+
 .projects {
   width: 100%;
+  padding-top: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,12 +198,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 12vh;
-  padding-top: 20vh;
 }
 
 .projects .projects-name {
-  padding-bottom: 4px;
+  padding: 0px 12px 8px 12px;
   border-bottom: 2px solid #212121;
   font-weight: bold;
   letter-spacing: 2px;
@@ -143,7 +217,7 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  margin-top: 92px;
+  margin-top: 128px;
   height: 400px;
 }
 
@@ -176,6 +250,7 @@
   font-size: 18px;
   text-align: justify;
   text-justify: inter-word;
+  line-height: 1.6;
 }
 
 .projects .card-2 {
@@ -184,7 +259,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 92px;
+  margin-top: 128px;
   height: 400px;
 }
 
@@ -220,8 +295,8 @@
 }
 
 .about {
-  height: 100vh;
   width: 100%;
+  padding-top: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,7 +313,8 @@
 }
 
 .about .about-me {
-  padding-bottom: 4px;
+  padding: 0px 12px 8px 12px;
+  padding-bottom: 8px;
   border-bottom: 2px solid #212121;
   font-weight: bold;
   letter-spacing: 2px;
@@ -281,5 +357,119 @@
   font-size: 18px;
   text-align: justify;
   text-justify: inter-word;
+}
+
+.go-deeper {
+  position: relative;
+  display: inline-block;
+  margin-top: 20vh;
+  padding: 26px;
+  text-decoration: none;
+  color: #212121;
+  background: #f5f5f5;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 18px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.go-deeper span {
+  display: block;
+  position: absolute;
+  background: #212121;
+}
+
+.go-deeper span:nth-child(1) {
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.go-deeper span:nth-child(2) {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.go-deeper span:nth-child(3) {
+  right: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.go-deeper span:nth-child(4) {
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 2px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.go-deeper:hover span:nth-child(1) {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.go-deeper:hover span:nth-child(2) {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.go-deeper:hover span:nth-child(3) {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.go-deeper:hover span:nth-child(4) {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.go-deeper.smaller-top-margin {
+  margin-top: 6vh;
+  margin-bottom: 12vh;
 }
 /*# sourceMappingURL=index.css.map */

@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
         <main>
           {children}
           <a href="#top" className="to-the-top">
-            Powrót na góre! 🡡
+            Przewiń na góre! 🡡
           </a>
         </main>
         <footer id="contact" className="contact">
