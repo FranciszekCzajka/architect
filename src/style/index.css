@@ -1,6 +1,6 @@
 .landing {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,8 +17,9 @@
 
 .landing .left {
   width: 50%;
-  height: 60%;
+  height: 80%;
   padding: 5%;
+  padding-bottom: 0%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,6 +104,119 @@
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 92px;
+}
+
+.projects {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 12vh;
+  padding-top: 20vh;
+}
+
+.projects .projects-name {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #212121;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.projects .card-1 {
+  width: 900px;
+  background-color: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-top: 92px;
+  height: 400px;
+}
+
+.projects .card-1 .left {
+  width: 50%;
+  height: 100%;
+}
+
+.projects .card-1 .left .picture {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projects .card-1 .right {
+  width: 50%;
+  height: 100%;
+  padding: 64px;
+}
+
+.projects .card-1 .right .project {
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 22px;
+}
+
+.projects .card-1 .right .project-text {
+  margin-top: 32px;
+  font-size: 18px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.projects .card-2 {
+  width: 900px;
+  background-color: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 92px;
+  height: 400px;
+}
+
+.projects .card-2 .left {
+  width: 50%;
+  height: 100%;
+}
+
+.projects .card-2 .left .picture {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projects .card-2 .right {
+  width: 50%;
+  height: 100%;
+  padding: 64px;
+}
+
+.projects .card-2 .right .project {
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 22px;
+}
+
+.projects .card-2 .right .project-text {
+  margin-top: 32px;
+  font-size: 18px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .about {
@@ -167,180 +281,5 @@
   font-size: 18px;
   text-align: justify;
   text-justify: inter-word;
-}
-
-.contact {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 90vh;
-  background: #424242;
-}
-
-.contact .contact-me {
-  color: #f5f5f5;
-  margin-bottom: 92px;
-  font-weight: bold;
-  font-size: 32px;
-  letter-spacing: 2px;
-}
-
-.contact .container {
-  position: relative;
-  min-width: 1100px;
-  min-height: 550px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 2;
-}
-
-.contact .container .contact-info {
-  position: absolute;
-  top: 40px;
-  width: 350px;
-  height: calc(100% - 80px);
-  background: #f5f5f5;
-  z-index: 1;
-  padding: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.contact .container .contact-info .contact-text {
-  color: #212121;
-  font-size: 24px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-.contact .container .contact-info .info {
-  position: relative;
-  margin: 20px 0;
-}
-
-.contact .container .contact-info .contact-details {
-  position: relative;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #212121;
-  margin: 20px 12px;
-  font-size: 18px;
-}
-
-.contact .container .contact-form {
-  position: absolute;
-  padding: 80px 50px;
-  background: #4a4a4a;
-  margin-left: 150px;
-  padding-left: 250px;
-  width: calc(100% - 250px);
-  height: 100%;
-}
-
-.contact .container .contact-form .send-message {
-  color: #f5f5f5;
-  letter-spacing: 2px;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.contact .container .contact-form .form {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-top: 42px;
-}
-
-.contact .container .contact-form .input {
-  position: relative;
-}
-
-.contact .container .contact-form .input span {
-  position: absolute;
-  left: 0;
-  padding: 5px;
-  font-size: 18px;
-  color: #f5f5f5;
-  -webkit-transition: .5s;
-  transition: .5s;
-  pointer-events: none;
-  letter-spacing: 1px;
-}
-
-.contact .container .contact-form .input textarea {
-  min-height: 120px;
-}
-
-.contact .container .contact-form .input input, .contact .container .contact-form .input textarea {
-  width: 100%;
-  padding: 6px 12px;
-  font-size: 18px;
-  color: #f5f5f5;
-  border: none;
-  outline: none;
-  background: #525252;
-  resize: none;
-}
-
-.contact .container .contact-form .input input:focus ~ span, .contact .container .contact-form .input textarea:focus ~ span,
-.contact .container .contact-form .input input:valid ~ span, .contact .container .contact-form .input textarea:valid ~ span {
-  -webkit-transform: translateY(-32px);
-          transform: translateY(-32px);
-  font-size: 16px;
-}
-
-.contact .container .contact-form .input input[type="submit"] {
-  position: relative;
-  cursor: pointer;
-  background: #f5f5f5;
-  color: #212121;
-  border: none;
-  max-width: 150px;
-  padding: 14px;
-  -webkit-transition: .4s all ease-in-out;
-  transition: .4s all ease-in-out;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-.contact .container .contact-form .input input[type="submit"]:hover {
-  color: #f5f5f5;
-  background: #212121;
-}
-
-.contact .container .contact-form .input.half {
-  width: 47%;
-  margin-bottom: 48px;
-}
-
-.contact .container .contact-form .input.full {
-  width: 100%;
-  margin-bottom: 20px;
-  text-align: right;
 }
 /*# sourceMappingURL=index.css.map */

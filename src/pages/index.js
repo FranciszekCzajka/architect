@@ -4,25 +4,98 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../style/index.css"
 import photo from "../images/photo.jpg"
+import project1 from "../images/project1.jpg"
+import project2 from "../images/project2.jpg"
+import project3 from "../images/project3.jpg"
+import project4 from "../images/project4.jpg"
+import project5 from "../images/project5.jpg"
 
 const IndexPage = () => {
 
   return (
     <Layout>
       <SEO title="Home" />
-      <div className="landing">
+      <div id="top" className="landing">
         <div className="left">
           <h2 className="main-text">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           </h2>
           <h3 className="sub-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque cum, odio voluptatum reprehenderit nemo animi maxime ipsa alias optio illum id laborum, ea repellat rem, perferendis iure doloremque modi eveniet!</h3>
-          <a href="#" className="CTA">
+          <a href="#services" className="CTA">
             <span className="CTA-text">
               SPRAWDŹ MOJE USŁUGI
             </span>
           </a>
         </div>
         <div className="right">
+        </div>
+      </div>
+      <div id="projects" className="projects">  
+        <h2 className="projects-name">Ostatnio wykonane projekty</h2>      
+        <div className="card-1">
+          <div className="left">
+            <img class="picture" src={project1} alt="To ja"/>
+          </div>
+          <div className="right">
+            <h3 className="project">
+              Projekt 1
+            </h3>
+            <p className="project-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusantium neque impedit repellat, quis ipsum dignissimos, tempore eveniet rem quisquam dicta obcaecati soluta totam nostrum ad fugiat aut assumenda ipsa.
+            </p>
+          </div>
+        </div>
+        <div className="card-2">
+          <div className="left">
+            <img class="picture" src={project2} alt="To ja"/>
+          </div>
+          <div className="right">
+            <h3 className="project">
+              Projekt 2
+            </h3>
+            <p className="project-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusantium neque impedit repellat, quis ipsum dignissimos, tempore eveniet rem quisquam dicta obcaecati soluta totam nostrum ad fugiat aut assumenda ipsa.
+            </p>
+          </div>
+        </div>
+        <div className="card-1">
+          <div className="left">
+            <img class="picture" src={project3} alt="To ja"/>
+          </div>
+          <div className="right">
+            <h3 className="project">
+              Projekt 3
+            </h3>
+            <p className="project-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusantium neque impedit repellat, quis ipsum dignissimos, tempore eveniet rem quisquam dicta obcaecati soluta totam nostrum ad fugiat aut assumenda ipsa.
+            </p>
+          </div>
+        </div>
+        <div className="card-2">
+          <div className="left">
+            <img class="picture" src={project4} alt="To ja"/>
+          </div>
+          <div className="right">
+            <h3 className="project">
+              Projekt 4
+            </h3>
+            <p className="project-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusantium neque impedit repellat, quis ipsum dignissimos, tempore eveniet rem quisquam dicta obcaecati soluta totam nostrum ad fugiat aut assumenda ipsa.
+            </p>
+          </div>
+        </div>
+        <div className="card-1">
+          <div className="left">
+            <img class="picture" src={project5} alt="To ja"/>
+          </div>
+          <div className="right">
+            <h3 className="project">
+              Projekt 5
+            </h3>
+            <p className="project-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusantium neque impedit repellat, quis ipsum dignissimos, tempore eveniet rem quisquam dicta obcaecati soluta totam nostrum ad fugiat aut assumenda ipsa.
+            </p>
+          </div>
         </div>
       </div>
       <div id="about" className="about">
@@ -38,53 +111,6 @@ const IndexPage = () => {
             <p className="i-am-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusantium neque impedit repellat, quis ipsum dignissimos, tempore eveniet rem quisquam dicta obcaecati soluta totam nostrum ad fugiat aut assumenda ipsa.
             </p>
-          </div>
-        </div>
-      </div>
-      <div id="contact" className="contact">
-          <h2 className="contact-me">Skontaktuj sie!</h2>
-        <div className="container">
-          <div className="contact-info">
-            <h2 className="contact-text">Dane kontaktowe:</h2>
-            <ul className="info">
-              <li className="contact-details">
-                <span>Kod pocztowy, Miasto, ulica, numer</span>
-              </li>
-              <li className="contact-details">
-                <span>main@example.com</span>
-              </li>
-              <li className="contact-details">
-                <span>123 456 789</span>
-              </li>
-            </ul>
-          </div>
-          <div className="contact-form">
-            <h2 className="send-message">Wyślij wiadomość</h2>
-            <div className="form">
-              <div className="input half">
-                <input type="text" required/>
-                <span>Imię</span>
-              </div>
-              <div className="input half">
-                <input type="text" required/>
-                <span>Nazwisko</span>
-              </div>
-              <div className="input half">
-                <input type="text" required/>
-                <span>Adres E-Mail</span>
-              </div>
-              <div className="input half">
-                <input type="text" required/>
-                <span>Numer telefonu</span>
-              </div>
-              <div className="input full">
-                <textarea required></textarea>
-                <span>Wiadomość</span>
-              </div>
-              <div className="input full">
-                <input type="submit" value="WYŚLIJ" />
-              </div>
-            </div>
           </div>
         </div>
       </div>

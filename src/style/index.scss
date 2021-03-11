@@ -2,7 +2,7 @@
 
 .landing {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,8 +11,9 @@
     align-items: center;
     .left {
         width: 50%;
-        height: 60%;
+        height: 80%;
         padding: 5%;
+        padding-bottom: 0%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -76,6 +77,87 @@
         background-image: url("../images/background.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        margin-top: 92px;
+    }
+}
+.projects {   
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    margin-bottom: 12vh;    
+    padding-top: 20vh;    
+    .projects-name {
+        padding-bottom: 4px;
+        border-bottom: 2px solid $dark;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    .card-1 {
+        width: 900px;
+        background-color: $light;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 92px;
+        height: 400px;
+        .left {
+            width: 50%;
+            height: 100%;
+            .picture {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .right {
+            width: 50%;
+            height: 100%;
+            padding: 64px;
+            .project {
+                font-weight: bold;
+                letter-spacing: 2px;
+                font-size: 22px;
+            }
+            .project-text {
+                margin-top: 32px;
+                font-size: 18px;
+                text-align: justify;
+                text-justify: inter-word;
+            }
+        }
+    }    
+    .card-2 {
+        width: 900px;
+        background-color: $light;
+        display: flex;
+        margin-top: 92px;
+        height: 400px;
+        .left {
+            width: 50%;
+            height: 100%;
+            .picture {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .right {
+            width: 50%;
+            height: 100%;
+            padding: 64px;
+            .project {
+                font-weight: bold;
+                letter-spacing: 2px;
+                font-size: 22px;
+            }
+            .project-text {
+                margin-top: 32px;
+                font-size: 18px;
+                text-align: justify;
+                text-justify: inter-word;
+            }
+        }
     }
 }
 .about {
@@ -119,139 +201,6 @@
                 text-align: justify;
                 text-justify: inter-word;
             }
-        }
-    }
-}
-.contact {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 90vh;
-    background: $darker-grey;
-    .contact-me {
-        color: $light;
-        margin-bottom: 92px;
-        font-weight: bold;
-        font-size: 32px;
-        letter-spacing: 2px;
-    }
-    .container {
-        position: relative;
-        min-width: 1100px;
-        min-height: 550px;
-        display: flex;
-        z-index: 2;
-        .contact-info {
-            position: absolute;
-            top: 40px;
-            width: 350px;
-            height: calc(100% - 80px);
-            background: $light;
-            z-index: 1;
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            .contact-text {
-                color: $dark;
-                font-size: 24px;
-                font-weight: bold;
-                letter-spacing: 2px;
-            }
-            .info {
-                position: relative;
-                margin: 20px 0;
-            }
-            .contact-details {
-                position: relative;
-                list-style: none;
-                display: flex;
-                color: $dark;
-                margin: 20px 12px;
-                font-size: 18px;
-            }
-        }
-        .contact-form {
-            position: absolute;
-            padding: 80px 50px;
-            background: $mid-grey;
-            margin-left: 150px;
-            padding-left: 250px;
-            width: calc(100% - 250px);
-            height: 100%;
-            .send-message {
-                color: $light;
-                letter-spacing: 2px;
-                font-size: 24px;
-                font-weight: bold;
-
-            }  
-            .form {
-                position: relative;
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                padding-top: 42px;
-
-            }
-            .input {
-                position: relative;
-                span {
-                    position: absolute;
-                    left: 0;
-                    padding: 5px;
-                    font-size: 18px;
-                    color: $light;
-                    transition: .5s;
-                    pointer-events: none;
-                    letter-spacing: 1px;
-                }
-                textarea {
-                    min-height: 120px;
-                }
-                input, textarea {
-                    width: 100%;
-                    padding: 6px 12px;
-                    font-size: 18px;
-                    color: $light;
-                    border: none;
-                    outline: none;
-                    background: $light-grey;
-                    resize: none;
-                }
-                input:focus ~ span, textarea:focus ~ span,
-                input:valid ~ span, textarea:valid ~ span {
-                    transform: translateY(-32px);
-                    font-size: 16px;
-                }
-                input[type="submit"] {
-                    position: relative;
-                    cursor: pointer;
-                    background: $light;
-                    color: $dark;
-                    border: none;
-                    max-width: 150px;
-                    padding: 14px;
-                    transition: .4s all ease-in-out;
-                    font-weight: bold;
-                    letter-spacing: 2px;
-                    &:hover {
-                        color: $light;
-                        background: $dark;
-                    }
-                }
-            }
-            .input.half {
-                width: 47%;
-                margin-bottom: 48px;
-            }
-            .input.full {
-                width: 100%;
-                margin-bottom: 20px;
-                text-align: right;
-            }
-
         }
     }
 }

@@ -5,11 +5,14 @@ const Header = ({ siteTitle }) => {
 
   const changeBackground = () => {
     const header = document.querySelector(".header");
+    const top = document.querySelector(".to-the-top");
     if(window.scrollY > 0) {
       header.classList.add('active');
+      top.classList.add('active');
     }
     else {
       header.classList.remove('active');
+      top.classList.remove('active');
     }
   }
   window.addEventListener('scroll', changeBackground);
@@ -54,9 +57,9 @@ const Header = ({ siteTitle }) => {
       </h1>
       <Menu />
       <ul className="nav-links">
-        <li className="link">Usługi</li>
+        <li><a className="link" href="#services">Usługi</a></li>
+        <li><a className="link" href="#projects">Projekty</a></li>
         <li><a className="link" href="#about">O mnie</a></li>
-        <li className="link">Projekty</li>
         <li><a className="link" href="#contact">Kontakt</a></li>
       </ul>
     </header>
