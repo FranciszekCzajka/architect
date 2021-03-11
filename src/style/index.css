@@ -54,7 +54,7 @@
 .landing .left .CTA .CTA-text {
   position: relative;
   padding: 16px 32px;
-  background-color: #fafafa;
+  background-color: #f5f5f5;
   z-index: 1;
   font-weight: bold;
 }
@@ -105,6 +105,70 @@
   background-size: cover;
 }
 
+.about {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .about-me {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #212121;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.about .card {
+  width: 900px;
+  background-color: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 92px;
+}
+
+.about .card .left {
+  width: 50%;
+  height: 100%;
+}
+
+.about .card .left .picture {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about .card .right {
+  width: 50%;
+  height: 100%;
+  padding: 64px;
+}
+
+.about .card .right .i-am {
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 22px;
+}
+
+.about .card .right .i-am-text {
+  margin-top: 32px;
+  font-size: 18px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .contact {
   position: relative;
   display: -webkit-box;
@@ -116,8 +180,20 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 90vh;
   background: #424242;
+}
+
+.contact .contact-me {
+  color: #f5f5f5;
+  margin-bottom: 92px;
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 2px;
 }
 
 .contact .container {
@@ -135,7 +211,7 @@
   top: 40px;
   width: 350px;
   height: calc(100% - 80px);
-  background: #fafafa;
+  background: #f5f5f5;
   z-index: 1;
   padding: 40px;
   display: -webkit-box;
@@ -181,7 +257,7 @@
 }
 
 .contact .container .contact-form .send-message {
-  color: #fafafa;
+  color: #f5f5f5;
   letter-spacing: 2px;
   font-size: 24px;
   font-weight: bold;
@@ -209,7 +285,7 @@
   left: 0;
   padding: 5px;
   font-size: 18px;
-  color: #fafafa;
+  color: #f5f5f5;
   -webkit-transition: .5s;
   transition: .5s;
   pointer-events: none;
@@ -224,7 +300,7 @@
   width: 100%;
   padding: 6px 12px;
   font-size: 18px;
-  color: #fafafa;
+  color: #f5f5f5;
   border: none;
   outline: none;
   background: #525252;
@@ -241,7 +317,7 @@
 .contact .container .contact-form .input input[type="submit"] {
   position: relative;
   cursor: pointer;
-  background: #fafafa;
+  background: #f5f5f5;
   color: #212121;
   border: none;
   max-width: 150px;
@@ -253,16 +329,16 @@
 }
 
 .contact .container .contact-form .input input[type="submit"]:hover {
-  color: #fafafa;
+  color: #f5f5f5;
   background: #212121;
 }
 
-.contact .container .contact-form .input.w50 {
+.contact .container .contact-form .input.half {
   width: 47%;
   margin-bottom: 48px;
 }
 
-.contact .container .contact-form .input.w100 {
+.contact .container .contact-form .input.full {
   width: 100%;
   margin-bottom: 20px;
   text-align: right;

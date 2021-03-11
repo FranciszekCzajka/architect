@@ -55,7 +55,7 @@ const Header = ({ siteTitle }) => {
       <Menu />
       <ul className="nav-links">
         <li className="link">Usługi</li>
-        <li className="link">O mnie</li>
+        <li><a className="link" href="#about">O mnie</a></li>
         <li className="link">Projekty</li>
         <li><a className="link" href="#contact">Kontakt</a></li>
       </ul>

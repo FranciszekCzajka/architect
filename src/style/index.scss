@@ -78,13 +78,65 @@
         background-size: cover;
     }
 }
+.about {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .about-me {
+        padding-bottom: 4px;
+        border-bottom: 2px solid $dark;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    .card {
+        width: 900px;
+        background-color: $light;
+        display: flex;
+        margin-top: 92px;
+        .left {
+            width: 50%;
+            height: 100%;
+            .picture {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .right {
+            width: 50%;
+            height: 100%;
+            padding: 64px;
+            .i-am {
+                font-weight: bold;
+                letter-spacing: 2px;
+                font-size: 22px;
+            }
+            .i-am-text {
+                margin-top: 32px;
+                font-size: 18px;
+                text-align: justify;
+                text-justify: inter-word;
+            }
+        }
+    }
+}
 .contact {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    flex-direction: column;
+    height: 90vh;
     background: $darker-grey;
+    .contact-me {
+        color: $light;
+        margin-bottom: 92px;
+        font-weight: bold;
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
     .container {
         position: relative;
         min-width: 1100px;
@@ -190,11 +242,11 @@
                     }
                 }
             }
-            .input.w50 {
+            .input.half {
                 width: 47%;
                 margin-bottom: 48px;
             }
-            .input.w100 {
+            .input.full {
                 width: 100%;
                 margin-bottom: 20px;
                 text-align: right;
