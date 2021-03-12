@@ -64,10 +64,10 @@ const IndexPage = () => {
           </div>
         </div>
         <a className="go-deeper" href="#projects">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+          <span className="wall"></span>
+          <span className="wall"></span>
+          <span className="wall"></span>
+          <span className="wall"></span>
           Sprawdź moje projekty
         </a>
       </div>
@@ -140,11 +140,11 @@ const IndexPage = () => {
             </p>
           </div>
         </div>
-        <a className="go-deeper" href="#about">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+        <a className="go-deeper smaller-top-margin" href="#about">
+          <span className="wall"></span>
+          <span className="wall"></span>
+          <span className="wall"></span>
+          <span className="wall"></span>
           Dowiedź się kim jestem
         </a>
       </div>
@@ -166,10 +166,10 @@ const IndexPage = () => {
           </div>
         </div>
         <a className="go-deeper smaller-top-margin" href="#contact">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+          <span className="wall"></span>
+          <span className="wall"></span>
+          <span className="wall"></span>
+          <span className="wall"></span>
           Skontaktuj sie ze mną
         </a>
       </div>

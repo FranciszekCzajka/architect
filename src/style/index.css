@@ -67,7 +67,7 @@
   left: -2px;
   width: calc(100% + 4px);
   height: calc(100% - 12px);
-  background: #fff;
+  background: #f5f5f5;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   -webkit-transform: scaleY(1);
@@ -86,7 +86,7 @@
   top: -2px;
   height: calc(100% + 4px);
   width: calc(100% - 12px);
-  background: #fff;
+  background: #f5f5f5;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   -webkit-transform: scaleX(1);
@@ -101,7 +101,7 @@
 .landing .right {
   width: 50%;
   height: 60%;
-  background-image: url("../images/background2.webp");
+  background-image: url("../images/background.webp");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 92px;
@@ -124,9 +124,11 @@
 
 .services .my-services {
   padding: 0px 12px 8px 12px;
+  padding-bottom: 8px;
   border-bottom: 2px solid #212121;
   font-weight: bold;
   letter-spacing: 2px;
+  margin-bottom: 92px;
 }
 
 .services .services-list {
@@ -156,7 +158,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 330px;
-  margin-top: 92px;
 }
 
 .services .services-list .service .up {
@@ -202,9 +203,11 @@
 
 .projects .projects-name {
   padding: 0px 12px 8px 12px;
+  padding-bottom: 8px;
   border-bottom: 2px solid #212121;
   font-weight: bold;
   letter-spacing: 2px;
+  margin-bottom: 92px;
 }
 
 .projects .card-1 {
@@ -216,9 +219,9 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  width: 900px;
+  width: 1000px;
   height: 400px;
-  margin: 64px;
+  margin-bottom: 92px;
 }
 
 .projects .card-1 .left {
@@ -258,9 +261,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 900px;
+  width: 1000px;
   height: 400px;
-  margin: 64px;
+  margin-bottom: 92px;
 }
 
 .projects .card-2 .left {
@@ -318,6 +321,7 @@
   border-bottom: 2px solid #212121;
   font-weight: bold;
   letter-spacing: 2px;
+  margin-bottom: 92px;
 }
 
 .about .card {
@@ -326,7 +330,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 92px;
 }
 
 .about .card .left {
@@ -374,13 +377,13 @@
   transition: .5s;
 }
 
-.go-deeper span {
+.go-deeper .wall {
   display: block;
   position: absolute;
   background: #212121;
 }
 
-.go-deeper span:nth-child(1) {
+.go-deeper .wall:nth-child(1) {
   left: 0;
   bottom: 0;
   width: 2px;
@@ -395,7 +398,7 @@
   transition: transform .5s, -webkit-transform .5s;
 }
 
-.go-deeper span:nth-child(2) {
+.go-deeper .wall:nth-child(2) {
   left: 0;
   bottom: 0;
   width: 100%;
@@ -410,7 +413,7 @@
   transition: transform .5s, -webkit-transform .5s;
 }
 
-.go-deeper span:nth-child(3) {
+.go-deeper .wall:nth-child(3) {
   right: 0;
   bottom: 0;
   width: 2px;
@@ -425,7 +428,7 @@
   transition: transform .5s, -webkit-transform .5s;
 }
 
-.go-deeper span:nth-child(4) {
+.go-deeper .wall:nth-child(4) {
   right: 0;
   top: 0;
   width: 100%;
@@ -473,6 +476,105 @@
   margin-bottom: 12vh;
 }
 
+@media screen and (min-width: 2560px) {
+  .landing .left .main-text {
+    font-size: 42px;
+    font-weight: bold;
+  }
+  .landing .left .sub-text {
+    font-size: 28px;
+  }
+  .landing .left .CTA {
+    width: 422px;
+    font-size: 28px;
+  }
+  .landing .left .CTA:before {
+    top: 6px;
+    left: -4px;
+    width: calc(100% + 8px);
+  }
+  .landing .left .CTA:after {
+    left: 6px;
+    top: -4px;
+    height: calc(100% + 8px);
+  }
+  .services .my-services {
+    font-size: 32px;
+    margin-bottom: 128px;
+  }
+  .services .services-list .service {
+    width: 450px;
+  }
+  .services .services-list .service .up {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+  }
+  .services .services-list .service .down {
+    text-align: center;
+    margin-top: 32px;
+    line-height: 1.6;
+    font-size: 26px;
+  }
+  .projects .projects-name {
+    font-size: 32px;
+    margin-bottom: 128px;
+  }
+  .projects .card-1 {
+    width: 1600px;
+    height: 640px;
+    margin-bottom: 128px;
+  }
+  .projects .card-1 .right {
+    width: 50%;
+    height: 100%;
+    padding: 64px;
+  }
+  .projects .card-1 .right .project {
+    font-size: 32px;
+  }
+  .projects .card-1 .right .project-text {
+    margin-top: 32px;
+    font-size: 28px;
+  }
+  .projects .card-2 {
+    width: 1600px;
+    height: 640px;
+    margin-bottom: 128px;
+  }
+  .projects .card-2 .right {
+    width: 50%;
+    height: 100%;
+    padding: 64px;
+  }
+  .projects .card-2 .right .project {
+    font-size: 32px;
+  }
+  .projects .card-2 .right .project-text {
+    margin-top: 32px;
+    font-size: 28px;
+  }
+  .about .about-me {
+    font-size: 32px;
+    margin-bottom: 128px;
+  }
+  .about .card {
+    width: 1200px;
+    margin-bottom: 26px;
+  }
+  .about .card .right .i-am {
+    font-size: 32px;
+  }
+  .about .card .right .i-am-text {
+    margin-top: 32px;
+    font-size: 28px;
+  }
+  .go-deeper {
+    padding: 32px;
+    font-size: 28px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .services .services-list {
     -webkit-box-orient: vertical;
@@ -486,6 +588,9 @@
   .landing .left {
     width: 80%;
     padding-left: 0;
+  }
+  .landing .left .CTA {
+    margin: 0 auto;
   }
   .landing .right {
     display: none;
@@ -554,56 +659,22 @@
     font-size: 18px;
   }
   .landing .left .CTA {
-    position: relative;
-    display: inline-block;
     width: 264px;
-    border: 2px solid #212121;
     padding: 16px 0px;
-    color: #212121;
-    text-decoration: none;
-    font-weight: bold;
     font-size: 18px;
-    background-color: #f5f5f5;
   }
   .landing .left .CTA .CTA-text {
-    position: relative;
     padding: 16px;
-    z-index: 1;
-    font-weight: bold;
   }
   .landing .left .CTA:before {
-    content: '';
-    position: absolute;
     top: 6px;
     left: -4px;
     width: calc(100% + 8px);
-    height: calc(100% - 12px);
-    background-color: #f5f5f5;
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-  }
-  .landing .left .CTA:hover:before {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
   }
   .landing .left .CTA:after {
-    content: '';
-    position: absolute;
     left: 6px;
     top: -4px;
     height: calc(100% + 8px);
-    width: calc(100% - 12px);
-    background-color: #f5f5f5;
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-  .landing .left .CTA:hover:after {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
   }
   .services {
     padding-top: 16vh;

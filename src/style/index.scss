@@ -49,7 +49,7 @@
             left: -2px;
             width: calc(100% + 4px);
             height: calc(100% - 12px);
-            background: #fff;
+            background: $light;
             transition: .5s ease-in-out;
             transform: scaleY(1);
         }        
@@ -63,7 +63,7 @@
             top: -2px;
             height: calc(100% + 4px);
             width: calc(100% - 12px);
-            background: #fff;
+            background: $light;
             transition: .5s ease-in-out;
             transform: scaleX(1);
         }
@@ -74,7 +74,7 @@
     .right {
         width: 50%;
         height: 60%;
-        background-image: url("../images/background2.webp");
+        background-image: url("../images/background.webp");
         background-repeat: no-repeat;
         background-size: cover;
         margin-top: 92px;
@@ -89,9 +89,11 @@
     flex-direction: column;
     .my-services {
         padding: 0px 12px 8px 12px;
+        padding-bottom: 8px;
         border-bottom: 2px solid $dark;
         font-weight: bold;
         letter-spacing: 2px;
+        margin-bottom: 92px;
     }    
     .services-list {
         width: 100%;
@@ -104,7 +106,6 @@
             align-items: center;
             flex-direction: column;
             width: 330px;
-            margin-top: 92px;
             .up {
                 width: 200px;
                 height: 200px;
@@ -135,17 +136,19 @@
     flex-direction: column;
     .projects-name {
         padding: 0px 12px 8px 12px;
+        padding-bottom: 8px;
         border-bottom: 2px solid $dark;
         font-weight: bold;
         letter-spacing: 2px;
+        margin-bottom: 92px;
     }
     .card-1 {
         background-color: $light;
         display: flex;
         flex-direction: row-reverse;
-        width: 900px;
+        width: 1000px;
         height: 400px;
-        margin: 64px;
+        margin-bottom: 92px;
         .left {
             width: 50%;
             height: 100%;
@@ -176,9 +179,9 @@
     .card-2 {
         background-color: $light;
         display: flex;
-        width: 900px;
+        width: 1000px;
         height: 400px;
-        margin: 64px;
+        margin-bottom: 92px;
         .left {
             width: 50%;
             height: 100%;
@@ -220,12 +223,12 @@
         border-bottom: 2px solid $dark;
         font-weight: bold;
         letter-spacing: 2px;
+        margin-bottom: 92px;
     }
     .card {
         width: 900px;
         background-color: $light;
         display: flex;
-        margin-top: 92px;
         .left {
             width: 50%;
             height: 100%;
@@ -265,7 +268,7 @@
     letter-spacing: 2px;
     font-size: 18px;
     transition: .5s;
-    span {
+    .wall {
         display: block;
         position: absolute;
         background: $dark;
@@ -331,6 +334,119 @@
     margin-bottom: 12vh;
 }
 
+@media screen and (min-width: 2560px) {
+    .landing {
+        .left {
+            .main-text {
+                font-size: 42px;
+                font-weight: bold;
+            }
+            .sub-text {
+                font-size: 28px;
+            }
+            .CTA {
+                width: 422px;
+                font-size: 28px;
+            }
+            .CTA:before {
+                top: 6px;
+                left: -4px;
+                width: calc(100% + 8px);
+            } 
+            .CTA:after {
+                left: 6px;
+                top: -4px;
+                height: calc(100% + 8px);
+            }
+        }
+    }
+    .services {
+        .my-services {
+            font-size: 32px;
+            margin-bottom: 128px;
+        }    
+        .services-list {
+            .service {
+                width: 450px;
+                .up {
+                    width: 300px;
+                    height: 300px;
+                    overflow: hidden;
+                }
+                .down {
+                    text-align: center;
+                    margin-top: 32px;
+                    line-height: 1.6;
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+    .projects {
+        .projects-name {
+            font-size: 32px;
+            margin-bottom: 128px;
+        }
+        .card-1 {
+            width: 1600px;
+            height: 640px;
+            margin-bottom: 128px;
+            .right {
+                width: 50%;
+                height: 100%;
+                padding: 64px;
+                .project {
+                    font-size: 32px;
+                }
+                .project-text {
+                    margin-top: 32px;
+                    font-size: 28px;
+                }
+            }
+        }    
+        .card-2 {
+            width: 1600px;
+            height: 640px;
+            margin-bottom: 128px;
+            .right {
+                width: 50%;
+                height: 100%;
+                padding: 64px;
+                .project {
+                    font-size: 32px;
+                }
+                .project-text {
+                    margin-top: 32px;
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+    .about {
+        .about-me {
+            font-size: 32px;
+            margin-bottom: 128px;
+        }
+        .card {
+            width: 1200px;
+            margin-bottom: 26px;
+            .right {
+                .i-am {
+                    font-size: 32px;
+                }
+                .i-am-text {
+                    margin-top: 32px;
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+    .go-deeper {
+        padding: 32px;
+        font-size: 28px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .services {
         .services-list {
@@ -344,6 +460,9 @@
         .left {
             width: 80%;
             padding-left: 0;
+            .CTA {
+                margin: 0 auto;
+            }
         }
         .right {
             display: none;
@@ -405,50 +524,22 @@
                 font-size: 18px;
             }
             .CTA {
-                position: relative;
-                display: inline-block;
                 width: 264px;
-                border: 2px solid $dark;
                 padding: 16px 0px;
-                color: $dark;
-                text-decoration: none;
-                font-weight: bold;
                 font-size: 18px;
-                background-color: $light;
                 .CTA-text {
-                    position: relative;
                     padding: 16px;
-                    z-index: 1;
-                    font-weight: bold;
                 }
             }
             .CTA:before {
-                content: '';
-                position: absolute;
                 top: 6px;
                 left: -4px;
                 width: calc(100% + 8px);
-                height: calc(100% - 12px);
-                background-color: $light;
-                transition: .5s ease-in-out;
-                transform: scaleY(1);
             }        
-            .CTA:hover:before {
-                transform: scaleY(0);
-            }
             .CTA:after {
-                content: '';
-                position: absolute;
                 left: 6px;
                 top: -4px;
                 height: calc(100% + 8px);
-                width: calc(100% - 12px);
-                background-color: $light;
-                transition: .5s ease-in-out;
-                transform: scaleX(1);
-            }
-            .CTA:hover:after {
-                transform: scaleX(0);
             }
         }
     }
