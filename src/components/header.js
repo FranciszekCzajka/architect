@@ -6,13 +6,16 @@ const Header = ({ siteTitle }) => {
   class Menu extends React.Component {
     toggle = () => {
 
+      const hamburger = document.querySelector(".hamburger")
       const navLinks = document.querySelector(".nav-links");
       const links = document.querySelectorAll(".nav-links li");      
       navLinks.classList.toggle("open");
+      hamburger.classList.toggle("active");
       
       links.forEach(link => {
         link.addEventListener("click", () => {
           navLinks.classList.remove("open");
+          hamburger.classList.remove("active");
         })
       });
     }
