@@ -680,6 +680,7 @@
     padding-top: 16vh;
   }
   .services .my-services {
+    margin-bottom: 0px;
     font-size: 16px;
   }
   .services .services-list .service {
@@ -698,6 +699,7 @@
     padding-top: 16vh;
   }
   .projects .projects-name {
+    margin-bottom: 32px;
     font-size: 16px;
   }
   .projects .card-1 {
@@ -735,6 +737,7 @@
     padding-top: 16vh;
   }
   .about .about-me {
+    margin-bottom: 64px;
     font-size: 16px;
   }
   .about .card {

@@ -68,7 +68,7 @@ const IndexPage = () => {
           <span className="wall"></span>
           <span className="wall"></span>
           <span className="wall"></span>
-          Sprawdź moje projekty
+          Zobacz moje projekty
         </a>
       </div>
       <div id="projects" className="projects">  
@@ -145,7 +145,7 @@ const IndexPage = () => {
           <span className="wall"></span>
           <span className="wall"></span>
           <span className="wall"></span>
-          Dowiedź się kim jestem
+          Dowiedz się kim jestem
         </a>
       </div>
       <div id="about" className="about">

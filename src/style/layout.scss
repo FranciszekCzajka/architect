@@ -16,6 +16,7 @@ body {
 .header {
     position: fixed;
     height: 10vh;
+    min-height: 80px;
     width: 100%;
     transition: .4s all ease-in-out;
     display: flex;
@@ -133,8 +134,8 @@ body {
                 span {
                     position: absolute;
                     left: 0;
-                    padding: 5px;
-                    font-size: 18px;
+                    padding: 6px;
+                    font-size: 16px;
                     color: $light;
                     transition: .5s;
                     pointer-events: none;
@@ -145,8 +146,8 @@ body {
                 }
                 input, textarea {
                     width: 100%;
-                    padding: 6px 12px;
-                    font-size: 18px;
+                    padding: 6px;
+                    font-size: 16px;
                     color: $light;
                     border: none;
                     outline: none;
@@ -234,14 +235,14 @@ body {
                 }
                 .input {
                     span {
-                        padding: 8px;
-                        font-size: 26px;
+                        padding: 10px;
+                        font-size: 22px;
                     }
                     textarea {
                         min-height: 260px;
                     }
                     input, textarea {
-                        padding: 12px 24px;
+                        padding: 12px 10px;
                         font-size: 22px;
                     }
                     input:focus ~ span, textarea:focus ~ span,
@@ -406,15 +407,15 @@ body {
                 }
                 .input {
                     span {
-                        padding: 5px;
-                        font-size: 16px;
+                        padding: 6px;
+                        font-size: 14px;
                     }
                     textarea {
                         min-height: 120px;
                     }
                     input, textarea {
-                        padding: 6px 12px;
-                        font-size: 18px;
+                        padding: 6px;
+                        font-size: 14px;
                     }
                     input:focus ~ span, textarea:focus ~ span,
                     input:valid ~ span, textarea:valid ~ span {
@@ -469,15 +470,15 @@ body {
                 }
                 .input {
                     span {
-                        padding: 8px 6px;
+                        padding: 6px;
                         font-size: 12px;
                     }
                     textarea {
                         min-height: 120px;
                     }
                     input, textarea {
-                        padding: 6px 12px;
-                        font-size: 18px;
+                        padding: 6px;
+                        font-size: 12px;
                     }
                     input:focus ~ span, textarea:focus ~ span,
                     input:valid ~ span, textarea:valid ~ span {
@@ -569,19 +570,19 @@ body {
                 }
                 .input {
                     span {
-                        padding: 5px;
+                        padding: 8px;
                         font-size: 16px;
                     }
                     textarea {
                         min-height: 120px;
                     }
                     input, textarea {
-                        padding: 6px 12px;
-                        font-size: 18px;
+                        padding: 8px;
+                        font-size: 16px;
                     }
                     input:focus ~ span, textarea:focus ~ span,
                     input:valid ~ span, textarea:valid ~ span {
-                        transform: translateY(-32px);
+                        transform: translateY(-36px);
                         font-size: 16px;
                     }
                     input[type="submit"] {
